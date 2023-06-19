@@ -2,21 +2,34 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"></noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-	<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-		integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous" async></script>
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+    <!-- Inline critical CSS -->
+    <style>
+        /* Contenu de ./assets/bootstrap/bootstrap.css */
+        /* Contenu de ./assets/style.css */
+    </style>
+
+    <!-- Non-critical CSS -->
+    <link rel="stylesheet" href="./assets/non-critical.css">
+
+    <!-- Preconnect to required domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+
+    <!-- Defer non-critical JavaScript -->
+    <script defer src="./assets/non-critical.js"></script>
+
+    <!-- Move critical JavaScript to the end of the body -->
+    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script src="./assets/critical.js"></script>
 </head>
+
 
 <body>
 	<div class="top-header">
